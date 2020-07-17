@@ -2,7 +2,8 @@
 
 The simulations are implemented using the [Mathematica](https://www.wolfram.com/mathematica/) library [QuESTlink](https://questlink.qtechtheory.org/), available at [here](https://github.com/QTechTheory/QuESTLink). Their paper is
 ```
-Tyson Jones, Simon C Benjamin, "QuESTlink - Mathematica embiggened by a hardware-optimised quantum emulator".
+Tyson Jones, Simon C Benjamin,
+"QuESTlink - Mathematica embiggened by a hardware-optimised quantum emulator".
 Quantum Sci. Technol. 5, 034012 (2020). arXiv:1912.07904 (2019)
 ```
 
