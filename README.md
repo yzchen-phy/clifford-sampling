@@ -1,5 +1,7 @@
 # clifford-sampling
 
+These are simulation code and data for [Scalable evaluation of quantum-circuit error loss using Clifford sampling (arXiv:2007.10019)](https://arxiv.org/abs/2007.10019) produced by Ying Li and Yanzhu Chen. The experimental data for the two-qubit gates are from Zhen Wang.
+
 The simulations are implemented using the [Mathematica](https://www.wolfram.com/mathematica/) library [QuESTlink](https://questlink.qtechtheory.org/), available at [here](https://github.com/QTechTheory/QuESTLink). Their paper is
 ```
 Tyson Jones, Simon C Benjamin,
