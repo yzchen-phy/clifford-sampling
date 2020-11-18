@@ -19,6 +19,7 @@ The **notebooks** are organized as follows:
 - "sqe" stands for gate-dependent single-qubit depolarizing noise
 - "composite" stands for the composite errors consisting of coherent rotations and amplitude damping
 - "exp" stands for using the experimentally measured Choi matrices for the two-qubit gates and leaving other components error-free
+- "exp_CPTP" stands for using the experimentally measured CPTP Chi matrices for the two-qubit gates and leaving other components error-free
 - "plot" is used for generating the figures
 - The file "AllChois.mat" contains all the experimentally measured Choi matrices for the two-qubit gates
 
@@ -36,6 +37,7 @@ The **data files** are organized as follows:
   - 4 - gate-dependent single-qubit depolarizing
   - c - composite noise
 - "expChoi" stands for using the experimentally measured Choi matrices for the two-qubit gates
+- "ChiCPTP" stands for using the experimentally measured CPTP Chi matrices for the two-qubit gates
 - "Q" stands for the number of qubits in the circuit
 - "G" stands for the number of two-qubit gates in the circuit
 - "q" stands for the label for the qubit on which obtaining 0 state is the observable
@@ -47,4 +49,4 @@ The **data files** are organized as follows:
 - Without "r" or "exp" the circuit is a standard one
 
 
-To use QuESTlink for simulation with the experimentally measured Choi matrices, one needs to modify the function `macro_isCompletelyPositiveMap` in the file `QuESTlink-master/QuEST/src/QuEST_validation.c` before compiling. In the line `dist_> REAL_EPS`, `REAL_EPS`(=10<sup>-13</sup>) needs to be replaced with some bigger value; for our purpose it is set to 0.5.
+To use QuESTlink for simulation with the experimentally measured Choi matrices (which are not CPTP maps), one needs to modify the function `macro_isCompletelyPositiveMap` in the file `QuESTlink-master/QuEST/src/QuEST_validation.c` before compiling. In the line `dist_> REAL_EPS`, `REAL_EPS`(=10<sup>-13</sup>) needs to be replaced with some bigger value; for our purpose it is set to 0.5. To use QuESTlink for simulation with the experimentally measured CPTP Chi matrices, the above modification is not needed.
